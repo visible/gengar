@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: "Helvetica Neue", Helvetica, var(--font-inter-tight), Arial, sans-serif;
+}
+
+@theme {
+  --color-paper: #9146ff;
+  --color-ink: #ffffff;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  scrollbar-width: none;
+}
+::selection {
+  background: var(--color-ink);
+  color: var(--color-paper);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 3px;
+}
+
+@keyframes set {
+  from {
+    visibility: hidden;
+  }
+}
+
+.set {
+  animation: set 0s both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .set {
+    animation: none;
+  }
+}

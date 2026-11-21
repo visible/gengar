@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Gengar</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="cover" data-on="true">
+      <div class="grid" aria-hidden="true"></div>
+
+      <header class="masthead">
+        <p><strong>Gengar</strong>Twitch ad blocker</p>
+        <div class="actions">
+          <button class="settings" type="button" hidden>Player settings</button>
+          <button class="power" type="button" role="switch" aria-checked="true" aria-label="Gengar">On</button>
+        </div>
+      </header>
+
+      <p class="count"><strong data-ref="total">0</strong><span data-ref="label">ads blocked</span></p>
+      <p class="status" data-ref="status" aria-live="polite"></p>
+    </main>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

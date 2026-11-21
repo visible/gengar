@@ -1,0 +1,16 @@
+{
+  "name": "@gengar/extension",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/build.mjs --watch",
+    "smoke": "node scripts/smoke.mjs",
+    "store": "node scripts/build.mjs && node scripts/store.mjs"
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "latest",
+    "playwright": "latest"
+  }
+}

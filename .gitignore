@@ -1,0 +1,13 @@
+node_modules/
+.next/
+out/
+.DS_Store
+*.log
+.vercel/
+.env*
+*.tsbuildinfo
+next-env.d.ts
+apps/web/public/gengar.user.js
+apps/web/public/gengar-*.zip
+apps/extension/dist/
+packages/core/dist/

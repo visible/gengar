@@ -1,0 +1,17 @@
+{
+  "name": "gengar-monorepo",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run build:extension && npm -w @gengar/web run dev",
+    "dev:script": "npm -w @gengar/core run dev",
+    "dev:extension": "npm -w @gengar/extension run dev",
+    "build:core": "npm -w @gengar/core run build",
+    "build:extension": "npm -w @gengar/extension run build",
+    "build": "npm run build:extension && npm -w @gengar/web run build",
+    "test": "npm -w @gengar/core run test"
+  }
+}
