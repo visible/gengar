@@ -38,12 +38,15 @@ export default function HomePage() {
       <Schema data={schema} />
 
       <div className="absolute inset-x-[clamp(20px,6vw,96px)] top-[clamp(28px,7dvh,88px)] bottom-[clamp(28px,6dvh,72px)]">
-        <Grid />
+        <div className="absolute inset-x-0 top-0 bottom-16">
+          <Grid />
+        </div>
 
         <Header title="Twitch ad blocker" href="/install" action="Install" className="absolute inset-x-0 top-0" />
-        <p className="sr-only">{DESCRIPTION}</p>
 
-        <Footer className="absolute inset-x-0 bottom-0" />
+        <Footer className="absolute inset-x-0 bottom-0">
+          <span className="max-w-[44ch]">{DESCRIPTION}</span>
+        </Footer>
       </div>
     </main>
   );
