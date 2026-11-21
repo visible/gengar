@@ -27,6 +27,11 @@ export const FAQ = [
       'Twitch puts ads inside the video stream itself, which is why regular ad blockers miss them. When an ad break starts, Gengar asks Twitch for the same stream as a different player that has no ads, plays that until the break ends, then switches back.'
   },
   {
+    question: 'How is Gengar different from other Twitch ad blockers?',
+    answer:
+      'It works inside the Twitch player instead of relying on filter lists, so it also works in Chrome, where uBlock Origin no longer runs. It uses no proxy servers, so every request goes straight to Twitch. And unlike Twitch Turbo, it is free.'
+  },
+  {
     question: 'Does Gengar work with uBlock Origin or AdBlock?',
     answer:
       'Yes. Keep them for ads on the rest of the page while Gengar handles the video player. Turn off any other Twitch video ad blocker or script, because two of them will fight over the player.'

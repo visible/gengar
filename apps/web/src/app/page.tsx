@@ -5,7 +5,7 @@ import { Schema } from '@/components/schema';
 import { BROWSERS, DESCRIPTION, REPO, SITE, meta } from '@/lib/facts';
 import { version } from '@/lib/release';
 
-export const metadata = meta('/', 'Gengar - Twitch Ad Blocker', DESCRIPTION);
+export const metadata = meta('/', 'Gengar - Twitch Ad Blocker for Chrome and Firefox', DESCRIPTION);
 
 export default function HomePage() {
   const schema = {
