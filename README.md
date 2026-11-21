@@ -30,41 +30,19 @@
 
 > status?
 
-  0.1.0, not released yet.
+  0.1.0 is waiting on review from the chrome web store and
+  firefox add-ons. store links go here once approved.
   live streams only. vods and clips are not covered.
   during a break the ad-free stream can play at a lower quality.
 
-> stack?
+> while you wait?
 
-  packages/core     javascript                         the ad blocker, shared by every build
-  apps/extension    manifest v3 · chrome · firefox     the extension
-  apps/web          next.js · typescript · tailwind    the site at geng.ar
-
-  node.js 22+ · npm workspaces
-
-> develop?
-
-  npm ci
-  npm run dev                  build the extension, then run the site
-  npm run dev:extension        rebuild the extension on save
-  npm run dev:script           rebuild the userscript on save, served on :4173
-  npm test                     core tests
-  npm run build                extension zips and the site
-
-> try it?
-
-  chrome     load apps/extension/dist/chrome unpacked from chrome://extensions
-  firefox    load apps/extension/dist/firefox/manifest.json from about:debugging
-
-> release?
-
-  npx playwright install chromium         once, for smoke and store
-  npm -w @gengar/extension run smoke      test the built extension on a live stream
-  npm -w @gengar/extension run store      store screenshots and promo tiles
-
-  apps/extension/dist/gengar-chrome-<version>.zip     chrome web store
-  apps/extension/dist/gengar-firefox-<version>.zip    addons.mozilla.org
-  apps/extension/dist/gengar-source-<version>.zip     source for mozilla review
+  userscript    install tampermonkey or violentmonkey, then open
+                https://geng.ar/gengar.user.js. updates itself.
+  chrome        unzip gengar-chrome.zip from geng.ar/install, turn on
+                developer mode in chrome://extensions, load unpacked
+  firefox       load gengar-firefox.zip from about:debugging.
+                firefox removes it on restart.
 
 > links?
 
