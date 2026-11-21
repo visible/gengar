@@ -74,5 +74,3 @@
 
   mit, see LICENSE
 ```
-
-gengar is not affiliated with or endorsed by Twitch. Twitch is a trademark of Twitch Interactive, Inc.
