@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 
 export const SITE = 'https://geng.ar';
+export const REPO = 'https://github.com/visible/gengar';
 export const UPDATED = '2026-11-21';
 export const UPDATED_TEXT = new Date(`${UPDATED}T00:00:00Z`).toLocaleDateString('en-US', {
   month: 'long',
@@ -36,8 +37,8 @@ export const FAQ = [
       'Chrome, Edge, Brave, Arc and Opera with the Chrome extension. Firefox 140 or later with the Firefox add-on. Any browser with Tampermonkey or Violentmonkey, including Safari, with the userscript.'
   },
   {
-    question: 'Is Gengar free?',
-    answer: 'Yes. There is no account, no subscription and no paid tier.'
+    question: 'Is Gengar free and open source?',
+    answer: 'Yes. There is no account, no subscription and no paid tier, and the code is on GitHub under the MIT license.'
   },
   {
     question: 'Does Gengar collect my data?',

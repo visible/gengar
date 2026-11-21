@@ -12,7 +12,7 @@ const interTight = Inter_Tight({
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
-  title: 'Gengar - Twitch without the ad breaks',
+  title: 'Gengar - Twitch Ad Blocker',
   description: DESCRIPTION,
   applicationName: 'Gengar',
   category: 'technology',

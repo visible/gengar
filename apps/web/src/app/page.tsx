@@ -2,10 +2,10 @@ import { Footer } from '@/components/footer';
 import { Grid } from '@/components/grid';
 import { Header } from '@/components/header';
 import { Schema } from '@/components/schema';
-import { BROWSERS, DESCRIPTION, SITE, meta } from '@/lib/facts';
+import { BROWSERS, DESCRIPTION, REPO, SITE, meta } from '@/lib/facts';
 import { version } from '@/lib/release';
 
-export const metadata = meta('/', 'Gengar - Twitch without the ad breaks', DESCRIPTION);
+export const metadata = meta('/', 'Gengar - Twitch Ad Blocker', DESCRIPTION);
 
 export default function HomePage() {
   const schema = {
@@ -26,6 +26,8 @@ export default function HomePage() {
         browserRequirements: BROWSERS,
         softwareVersion: version() ?? undefined,
         isAccessibleForFree: true,
+        license: 'https://opensource.org/licenses/MIT',
+        sameAs: [REPO],
         offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }
       }
     ]
@@ -39,6 +41,7 @@ export default function HomePage() {
         <Grid />
 
         <Header title="Twitch ad blocker" href="/install" action="Install" className="absolute inset-x-0 top-0" />
+        <p className="sr-only">{DESCRIPTION}</p>
 
         <Footer className="absolute inset-x-0 bottom-0" />
       </div>

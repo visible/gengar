@@ -9,6 +9,9 @@ export const contentType = 'image/png';
 
 const font = (weight: number) => readFile(join(process.cwd(), `assets/inter-tight-${weight}.ttf`));
 
+// the header is larger here than on the site, so letters under it are dropped
+const letters = LETTERS.filter(([col, row]) => row > 1 || col < 21);
+
 export default async function Image() {
   const [regular, bold] = await Promise.all([font(400), font(700)]);
 
@@ -25,7 +28,7 @@ export default async function Image() {
         }}
       >
         <div style={{ position: 'absolute', top: 60, right: 72, bottom: 52, left: 72, display: 'flex' }}>
-          {[...LETTERS, WORD].map(([col, row, text], k) => (
+          {[...letters, WORD].map(([col, row, text], k) => (
             <div
               key={k}
               style={{

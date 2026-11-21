@@ -1,4 +1,4 @@
-import { BROWSERS, DESCRIPTION, FAQ, SITE } from '@/lib/facts';
+import { BROWSERS, DESCRIPTION, FAQ, REPO, SITE } from '@/lib/facts';
 import { version } from '@/lib/release';
 
 export const dynamic = 'force-static';
@@ -22,6 +22,7 @@ ${current ? `- Version: ${current}\n` : ''}- Price: free, no account
 - Covers: Twitch live streams, not VODs or clips
 - Works alongside uBlock Origin and AdBlock
 - Data collection: none
+- Source: ${REPO} (MIT license)
 
 ## Questions
 

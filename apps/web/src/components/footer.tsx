@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import type { ReactNode } from 'react';
+import { REPO } from '@/lib/facts';
 
 const LINK = 'underline underline-offset-2 hover:no-underline aria-[current=page]:no-underline';
 
@@ -22,6 +23,9 @@ export function Footer({
         <Link href="/privacy" aria-current={current === '/privacy' ? 'page' : undefined} className={LINK}>
           Privacy
         </Link>
+        <a href={REPO} className={LINK}>
+          GitHub
+        </a>
       </nav>
     </footer>
   );
